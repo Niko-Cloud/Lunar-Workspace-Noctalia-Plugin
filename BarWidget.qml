@@ -78,10 +78,10 @@ Item {
     implicitHeight: contentHeight
 
     // Colors — Lunar color scheme
-    readonly property color ranniBlue:   "#9DBCF5"
-    readonly property color ranniGlow:   "#2A3355"
-    readonly property color urgentColor: "#C45A7A"
-    readonly property color urgentGlow:  "#10131c"
+    readonly property color mPrimaryColor:  Style.mPrimary
+    readonly property color baseGlowColor:  Style.mHover 
+    readonly property color urgentColor:    Style.mError
+    readonly property color urgentGlow:     Style.mOnPrimary
 
     // Glow settings (focused)
     readonly property real glowSize:    pluginApi?.pluginSettings?.glowSize    ?? 2.2
@@ -145,10 +145,10 @@ Item {
     }
 
     function colorFor(state) {
-        if (state === 0) return ranniBlue
+        if (state === 0) return mPrimaryColor
         if (state === 1) return urgentColor
-        if (state === 2) return Qt.rgba(0.616, 0.737, 0.961, 0.75)
-        return                  Qt.rgba(0.616, 0.737, 0.961, 0.40)
+        if (state === 2) return Style.mOnSurface
+        return                  Style.mOnSurfaceVariant
     }
 
     function sizeFor(state) {
@@ -159,7 +159,7 @@ Item {
     }
 
     function glowColorFor(state) {
-        return state === 1 ? urgentGlow : ranniGlow
+        return state === 1 ? urgentGlow : baseGlowColor
     }
 
     function glowSizeFor(state) {
