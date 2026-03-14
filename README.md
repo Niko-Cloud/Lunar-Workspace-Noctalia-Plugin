@@ -20,7 +20,7 @@ To add this plugin to your Noctalia setup, follow these steps:
 
 2. Clone this repository directly into the folder:
    ```bash
-   git clone [https://github.com/Niko-Cloud/Lunar-Workspace-Noctalia-Plugin.git](https://github.com/Niko-Cloud/Lunar-Workspace-Noctalia-Plugin.git) LunarWorkspace
+   git clone https://github.com/Niko-Cloud/Lunar-Workspace-Noctalia-Plugin.git LunarWorkspace
    ```
 
 3. Reload or restart Noctalia. It will read the `manifest.json` file and register the plugin automatically.
