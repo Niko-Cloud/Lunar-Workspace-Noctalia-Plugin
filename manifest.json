@@ -1,0 +1,31 @@
+{
+  "id": "lunar-workspaces",
+  "name": "Lunar Workspaces",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "4.0.0",
+  "author": "yuki",
+  "license": "MIT",
+  "description": "Ranni the Witch themed workspace indicator.",
+  "tags": ["Bar", "Workspaces"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": [],
+    "system": ["zenity"]
+  },
+  "metadata": {
+    "defaultSettings": {
+      "workspaceDisplayMode": "all",
+      "iconActive": "",
+      "iconUrgent": "",
+      "iconNearby": "",
+      "iconFar": "",
+      "sizeFocused":   1.7,
+      "sizeUrgent":    1.5,
+      "sizeOccupied":  1.4,
+      "sizeEmpty":     1.2
+    }
+  }
+}

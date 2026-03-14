@@ -1,0 +1,19 @@
+{
+  "iconActive": "/home/yuki/Pictures/Wallpapers/ranni-elden-ring.gif",
+  "iconUrgent": "/home/yuki/Downloads/1ilzbr0e03591-removebg-preview.png",
+  "iconNearby": "❄️",
+  "iconFar": "❄️",
+  "sizeFocused": 2.95,
+  "sizeUrgent": 2.45,
+  "sizeOccupied": 1.95,
+  "sizeEmpty": 1.9,
+  "glowSize": 0,
+  "glowOpacity": 0,
+  "glowBlur": 1,
+  "glowBlurMax": 64,
+  "urgentGlowSize": 1.2000000000000002,
+  "urgentGlowOpacity": 1,
+  "urgentGlowBlur": 1,
+  "urgentGlowBlurMax": 64,
+  "workspaceDisplayMode": "active-occupied"
+}
