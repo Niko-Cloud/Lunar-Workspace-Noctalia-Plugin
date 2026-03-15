@@ -81,7 +81,7 @@ Item {
     readonly property color mPrimaryColor:  Style.mPrimary
     readonly property color baseGlowColor:  Style.mHover 
     readonly property color urgentColor:    Style.mError
-    readonly property color urgentGlow:     Style.mOnPrimary
+    readonly property color urgentGlow:     Style.mSecondary
 
     // Glow settings (focused)
     readonly property real glowSize:    pluginApi?.pluginSettings?.glowSize    ?? 2.2
