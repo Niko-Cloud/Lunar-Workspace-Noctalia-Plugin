@@ -8,6 +8,10 @@ A customizable workspace widget plugin for Noctalia. Replace your default worksp
 - **Integrated UI:** Built-in `ImagePickerPanel.qml` and `Settings.qml` means you can configure everything directly through Noctalia's graphical interface without editing config files manually.
 - **Native Rendering:** Written entirely in QML to integrate seamlessly and efficiently with Noctalia's bar.
 
+## Preview
+
+<video src="https://github.com/user-attachments/assets/2f894449-57b4-43ce-8ed9-1900412e8c2f" width="400" controls></video>
+
 ## Installation
 
 To add this plugin to your Noctalia setup, follow these steps:
