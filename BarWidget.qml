@@ -78,10 +78,10 @@ Item {
     implicitHeight: contentHeight
 
     // Colors — Lunar color scheme
-    readonly property color mPrimaryColor:  Style.mPrimary
-    readonly property color baseGlowColor:  Style.mHover 
-    readonly property color urgentColor:    Style.mError
-    readonly property color urgentGlow:     Style.mSecondary
+    readonly property color mPrimaryColor:  Color.mPrimary || Style.mPrimary
+    readonly property color baseGlowColor:  Color.mPrimary || Style.mPrimary
+    readonly property color urgentColor:    Color.mError   || Style.mError
+    readonly property color urgentGlow:     Color.mError   || Style.mError
 
     // Glow settings (focused)
     readonly property real glowSize:    pluginApi?.pluginSettings?.glowSize    ?? 2.2
@@ -147,8 +147,8 @@ Item {
     function colorFor(state) {
         if (state === 0) return mPrimaryColor
         if (state === 1) return urgentColor
-        if (state === 2) return Style.mOnSurface
-        return                  Style.mOnSurfaceVariant
+        if (state === 2) return Color.mOnSurface || Style.mOnSurface
+        return                  Color.mOnSurfaceVariant || Style.mOnSurfaceVariant
     }
 
     function sizeFor(state) {
